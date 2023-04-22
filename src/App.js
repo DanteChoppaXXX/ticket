@@ -13,10 +13,10 @@ const events = {
   name: "TAYLOR SWIFT|The ERAS TOUR",
   // name: "BTS Permission To Dance On Stage - LA",
   
-  title: "Harry Styles Presale Powered by Ticketmas...",
+  title: "TaylorSwiftTix VIP Presale powered by Verified fan",
   // title: "BTS ARMY Verified Fan General Presale",
 
-  image: hslot,
+  image: Tswift,
   // image: bts,
 
   // user info/client info --- email with your name on it
@@ -29,12 +29,12 @@ const events = {
   taxFee: 100 ,
   paid: true,
   // number of tickets
-  tix: 1 ,
+  tix: 3 ,
 
   // edit here to change ticket state
   // if you edit the state also update
   // the email confirmation below
-  date: "Thu , Oct 06, 8:00pm • United Center",
+  date: "Sat , Apr 29, 18:30pm • Mercedes-Benz Stadium",
   emailInfo: {
     date: "Thu • Oct 06, 2022 • 8:00 PM",
     location: "United Center",
@@ -46,7 +46,7 @@ const events = {
   // Edit here to change seating positison
   seatMap: [
     {
-      sec: "GAFLO5",
+      sec: "124",
       row: "GA7",
       seat: "-",
     },
