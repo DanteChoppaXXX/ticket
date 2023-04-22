@@ -36,8 +36,8 @@ const events = {
   // the email confirmation below
   date: "Sat , Apr 29, 18:30pm • Mercedes-Benz Stadium",
   emailInfo: {
-    date: "Thu • Oct 06, 2022 • 8:00 PM",
-    location: "United Center",
+    date: "Sat • Apr 29, 2023 • 8:00 PM",
+    location: "Mercedes-Benz Stadium"",
   },
 
   // screen record countdown
@@ -47,13 +47,18 @@ const events = {
   seatMap: [
     {
       sec: "124",
-      row: "GA7",
-      seat: "-",
+      row: "9",
+      seat: "5",
     },
     {
-      sec: "GAFLO5",
-      row: "GA8",
-      seat: "-",
+      sec: "124",
+      row: "9",
+      seat: "6",
+    },
+    {
+      sec: "124",
+      row: "9",
+      seat: "7",
     },
   ],
 };
