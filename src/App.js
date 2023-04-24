@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import MyEvent from "./pages/MyEvent";
 import Ticket from "./pages/Ticket";
 import EmailConfirmation from "./pages/EmailConfirmation";
@@ -96,6 +96,8 @@ function App() {
           <FeePage {...routeProps} info={events} time={time} />
         )}
       />
+      {/* add a Redirect component to redirect to the "Ticket" page */}
+      <Redirect exact from="/" to="/ticket" />
     </Switch>
   );
 }
