@@ -44,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     // display: "flex",
     height: "40px",
     display: "none",
-
+makeStyles
     alignItems: "center",
     justifyContent: "space-between",
     width: "100%",
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     // height: "12px",
     marginTop: "4px",
     marginRight: "4px",
-  },
+  },makeStyles
   time: {
     marginLeft: "12px",
     fontSize: "15px",
@@ -185,7 +185,7 @@ const Layout = ({ children, navbar, time }) => {
           <span className={classes.footerLink}>Terms of Use</span>
         </p>
         <p>
-          <span className={classes.footerLink}>Privacy Policy</span> | 1999-2021
+          <span className={classes.footerLink}>Privacy Policy</span> | 1999-2023
           Ticketmaster. All rights reserved.
         </p>
       </Box>
