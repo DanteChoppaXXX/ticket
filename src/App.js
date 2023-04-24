@@ -20,12 +20,12 @@ const events = {
   // image: bts,
 
   // user info/client info --- email with your name on it
-  user: "amir.ash104@gmail.com",
+  user: "daniskascott@gmail.com",
 
   // fee & transfer info
   success: true,
-  userName: "Silva",
-  clientName: "Lauren(laureneleider@gmail.com)",
+  userName: "Daniska",
+  clientName: "Buyer-name(buyer-email@gmail.com)",
   taxFee: 100 ,
   paid: true,
   // number of tickets
