@@ -1,11 +1,11 @@
 import React from "react";
 import Logo from "../assets/image 1.png";
-import { AppBar, Icon, Box, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Icon, Box, Toolbar, /*Typography*/ } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 import SearchIcon from "@material-ui/icons/Search";
 import MenuIcon from "@material-ui/icons/Menu";
-import LockIcon from "@material-ui/icons/Lock";
+//import LockIcon from "@material-ui/icons/Lock";
 
 import { makeStyles } from "@material-ui/core/styles";
 import UserProfile from "../assets/user.png";
@@ -44,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     // display: "flex",
     height: "40px",
     display: "none",
-makeStyles
     alignItems: "center",
     justifyContent: "space-between",
     width: "100%",
@@ -54,7 +53,7 @@ makeStyles
     // height: "12px",
     marginTop: "4px",
     marginRight: "4px",
-  },makeStyles
+  },
   time: {
     marginLeft: "12px",
     fontSize: "15px",
@@ -87,7 +86,7 @@ makeStyles
     width: "100%",
     zIndex: theme.zIndex.modal + 40,
     background:
-      "linear-gradient(180deg, #19191d 0%, #505050 35%, #d8d8d8 100%)",
+      "#202731",
   },
   siteRoute: {
     height: 30,
@@ -95,13 +94,13 @@ makeStyles
     alignItems: "center",
     justifyContent: "center",
     padding: "4px",
-    color: "#fff",
+    color: "#000000",
   },
   siteDetailsIcon: {
     "& > svg": {
-      fontSize: "1rem",
-      width: "0.7em",
-      height: "0.7em",
+      fontSize: "0",
+      width: "0",
+      height: "0",
     },
   },
   siteName: {
@@ -109,11 +108,11 @@ makeStyles
     marginLeft: "4px",
   },
   footer: {
-    background: "#1F262E",
-    color: "#676B74",
+    background: "#FFFFFF",
+    color: "#FFFFFF",
   },
   footerLink: {
-    color: "#ccc",
+    color: "#FFFFFF",
   },
   wifi: {
     fontSize: "0.1rem",
@@ -143,16 +142,16 @@ const Layout = ({ children, navbar, time }) => {
           </div>
         </div>
         <div className={classes.siteRoute}>
-          <span className={classes.siteDetailsIcon}>
+          {/*<span className={classes.siteDetailsIcon}>
             <LockIcon />
-          </span>
-          <Typography
+          </span>*/}
+          {/*<Typography
             className={classes.siteName}
             variant="subtitle1"
             component="span"
           >
             my.ticketmaster.com
-          </Typography>
+          </Typography>*/}
         </div>
       </div>
       {navbar && (
