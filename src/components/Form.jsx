@@ -37,10 +37,13 @@ const useStyles = makeStyles((theme) => ({
 const CustomForm = () => {
   const classes = useStyles();
 
-  const number = 3;
-  const section = "124";
-  const row = "9";
-  const seat = "5 - 7";
+  const number = 4;
+  const section = "506";
+  const row = "5";
+  const seat = "7 - 8";
+  const section01 = "544";
+  const row01 = "20";
+  const seat01 = "20 - 21";
 
   return (
     <Box>
@@ -62,10 +65,18 @@ const CustomForm = () => {
           </Typography>
 
           <Typography variant="body1" color="initial" component="p">
+            <span className={classes.seat}>Sec</span> {section01}{" "}
+            <span className={classes.seat}>Row</span> {row01}{" "}
+            <span className={classes.seat}>Seat</span> {seat01}{" "}
+            
+          </Typography>
+          <Typography variant="body1" color="initial" component="p">
             <span className={classes.seat}>Sec</span> {section}{" "}
             <span className={classes.seat}>Row</span> {row}{" "}
             <span className={classes.seat}>Seat</span> {seat}{" "}
+            
           </Typography>
+          
         </Box>
         <form>
           <Box mb={2}>
