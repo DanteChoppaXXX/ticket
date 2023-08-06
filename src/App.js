@@ -10,10 +10,10 @@ import Tswift from "./assets/Tswift.jpg";
 
 const time = "12 :24";
 const events = {
-  name: "TAYLOR SWIFT|The ERAS TOUR",
+  name: "Taylor Swift | The Eras Tour",
   // name: "BTS Permission To Dance On Stage - LA",
   
-  title: "TaylorSwiftTix VIP Presale powered by Verified fan",
+  title: "TaylorSwiftTix Presale powered by Verified Fan",
   // title: "BTS ARMY Verified Fan General Presale",
 
   image: Tswift,
@@ -29,15 +29,15 @@ const events = {
   taxFee: 100 ,
   paid: true,
   // number of tickets
-  tix: 3 ,
+  tix: 4 ,
 
   // edit here to change ticket state
   // if you edit the state also update
   // the email confirmation below
-  date: "Sat , Apr 29, 18:30pm • Mercedes-Benz Stadium",
+  date: "Tue , Aug 08, 6:30pm • SoFi Stadium",
   emailInfo: {
-    date: "Sat • Apr 29, 2023 • 8:00 PM",
-    location: "Mercedes-Benz Stadium"",
+    date: "Tue • Aug 08, 2023 • 6:30 PM",
+    location: "SoFi Stadium",
   },
 
   // screen record countdown
@@ -46,20 +46,25 @@ const events = {
   // Edit here to change seating positison
   seatMap: [
     {
-      sec: "124",
-      row: "9",
-      seat: "5",
-    },
-    {
-      sec: "124",
-      row: "9",
-      seat: "6",
-    },
-    {
-      sec: "124",
-      row: "9",
+      sec: "506",
+      row: "7",
       seat: "7",
     },
+    {
+      sec: "506",
+      row: "7",
+      seat: "8",
+    },
+    /*
+      sec: "544",
+      row: "20",
+      seat: "20",
+    },
+    {
+      sec: "544",
+      row: "20",
+      seat: "21",
+    */,
   ],
 };
 
