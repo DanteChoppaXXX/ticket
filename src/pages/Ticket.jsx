@@ -11,7 +11,8 @@ import {
   Link,
   Button,
 } from "@material-ui/core";
-import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
+//import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
+import Close from "@material-ui/icons/Close";
 // eslint-disable-next-line
 import Countdown from "../components/Countdown";
 import ver from "../assets/ver.png";
@@ -25,7 +26,7 @@ import AppleWallet from "../assets/Apple-wallet.png";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#fff",
+    backgroundColor: "#202731",
     marginTop: "23px",
     position: "fixed",
     top: 0,
@@ -35,11 +36,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     flexGrow: 1,
-    color: "#000",
-    marginLeft: "-24px",
+    color: "#FFF",
+    marginLeft: "0px",
   },
-  backButton: {
-    color: "#000",
+  closeButton: {
+    color: "#FFF",
   },
   card: {
     borderRadius: "16px",
@@ -108,9 +109,14 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "0.6rem",
   },
   link: {
-    fontWeight: 600,
+    fontWeight: 550,
     marginTop: "16px",
-    color: "#0560C9",
+    color: "#0078FF",
+  },
+  link1: {
+    fontWeight: 500,
+    marginTop: "8px",
+    color: "#FFFFFF",
   },
   buttonM: {
     background: "#0560C9",
@@ -162,16 +168,26 @@ const Ticket = ({ info, time }) => {
         <Toolbar>
           <IconButton
             edge="start"
-            className={classes.backButton}
-            aria-label="back"
+            className={classes.closeButton}
+            aria-label="close"
             onClick={() => history.push("/myevent")}
           >
-            <ArrowBackIosOutlinedIcon />
+            <Close />
           </IconButton>
 
-          <Typography variant="h5" className={classes.title}>
+          <Typography variant="h6" className={classes.title}>
             My Tickets
           </Typography>
+
+          <Link
+                  component={RouterLink}
+                  className={classes.link1}
+                  variant="body1"
+                  to="/ticketdetails"
+                >
+                  Help
+                </Link>
+
         </Toolbar>
       </AppBar>
 
@@ -180,24 +196,24 @@ const Ticket = ({ info, time }) => {
           {seatMap.map((s) => (
             <Card key={s.sec} className={classes.card}>
               <Box className={classes.ticketType}>
-                <Typography variant="subtitle2">{title}</Typography>
+                <Typography variant="subtitle4">{title}</Typography>
               </Box>
               <Box className={classes.section}>
                 <div className={classes.seating}>
-                  <Typography variant="subtitle1">SEC</Typography>
-                  <Typography variant="h5" component="h2">
+                  <Typography variant="subtitle6">SEC</Typography>
+                  <Typography variant="subtitle6" component="h2">
                     {s.sec}
                   </Typography>
                 </div>
                 <div className={classes.seating}>
-                  <Typography variant="subtitle1">ROW</Typography>
-                  <Typography variant="h5" component="h2">
+                  <Typography variant="subtitle6">ROW</Typography>
+                  <Typography variant="subtitle6" component="h2">
                     {s.row}
                   </Typography>
                 </div>
                 <div className={classes.seating}>
-                  <Typography variant="subtitle1">SEAT</Typography>
-                  <Typography variant="h5" component="h2">
+                  <Typography variant="subtitle6">SEAT</Typography>
+                  <Typography variant="subtitle6" component="h2">
                     {s.seat}
                   </Typography>
                 </div>
@@ -216,7 +232,7 @@ const Ticket = ({ info, time }) => {
                   </div>
               </Box>
               <Box p={5} textAlign="center">
-               {/* <Typography variant="body1">
+                {/*<Typography variant="body1">
                   Tickets will be ready in:
                 </Typography>
                 <Countdown
@@ -224,11 +240,11 @@ const Ticket = ({ info, time }) => {
                   timeFormat="MM DD YYYY, h:mm a"
                   classes={classes} 
                 /> */}
-                 <Typography variant="h6"></Typography>
+                 <Typography variant="subtitle1" component="h3">UPPER LEVEL</Typography>
                 <img
                   src={AppleWallet}
                   alt={"app"}
-                  style={{ margin: "10px auto", display: "block" }}
+                  style={{ margin: "4px auto", display: "block" }}
                 />
                 <div
                   style={{ display: "flex", justifyContent: "space-between" }}
