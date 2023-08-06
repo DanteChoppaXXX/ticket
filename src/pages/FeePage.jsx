@@ -310,7 +310,7 @@ const FeePage = ({ time,info}) => {
                 <Box mt={2}>
                   <Typography variant="body2" color="initial" component="p">
                     This email is <strong>NOT</strong> your ticket. You can see
-                    the ticket in your Ticketmaster acount via the button above.
+                    the ticket in your Ticketmaster account via the button above.
                   </Typography>
                 </Box>
               </Box>
