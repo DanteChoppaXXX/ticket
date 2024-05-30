@@ -178,7 +178,7 @@ const Layout = ({ children, navbar, time }) => {
       <Box my={3}>
         <Container>{children}</Container>
       </Box>
-      <Box textAlign="left" p={2} mt={8} className={classes.footer}>
+{/*       <Box textAlign="left" p={2} mt={8} className={classes.footer}>
         <p>
           By continuing past this page, you agree to our{" "}
           <span className={classes.footerLink}>Terms of Use</span>
@@ -187,7 +187,7 @@ const Layout = ({ children, navbar, time }) => {
           <span className={classes.footerLink}>Privacy Policy</span> | 1999-2023
           Ticketmaster. All rights reserved.
         </p>
-      </Box>
+      </Box> */}
     </div>
   );
 };
