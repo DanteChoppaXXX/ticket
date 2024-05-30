@@ -94,8 +94,8 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
   },
   container: {
-    display: "flex",
-    marginTop: "16px",
+    display: "fixed",
+    marginTop: "30px",
     alignContent: "center",
     justifyContent: "space-around",
     marginBottom: "16px",
@@ -191,7 +191,7 @@ const Ticket = ({ info, time }) => {
         </Toolbar>
       </AppBar>
 
-      <Box mt={22}>
+      <Box mt={22} className={classes.container}>
         <Slider {...settings}>
           {seatMap.map((s) => (
             <Card key={s.sec} className={classes.card}>
