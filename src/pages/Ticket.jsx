@@ -27,7 +27,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   appBar: {
     backgroundColor: "#202731",
-    marginTop: "23px",
+    marginTop: "0px",
     position: "fixed",
     top: 0,
     left: 0,
@@ -240,12 +240,24 @@ const Ticket = ({ info, time }) => {
                   timeFormat="MM DD YYYY, h:mm a"
                   classes={classes} 
                 /> */}
-                 <Typography variant="subtitle1" component="h3">UPPER LEVEL</Typography>
-                <img
+                <Typography variant="subtitle1" component="h3">UPPER LEVEL</Typography>
+                {/* <img
                   src={AppleWallet}
                   alt={"app"}
                   style={{ margin: "4px auto", display: "block" }}
+                /> */}
+                <img
+                  src={AppleWallet}
+                  alt="app"
+                  style={{ 
+                    margin: "4px auto", 
+                    display: "block", 
+                    maxWidth: "100%", 
+                    height: "auto", 
+                    objectFit: "contain"
+                  }}
                 />
+
                 <div
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >

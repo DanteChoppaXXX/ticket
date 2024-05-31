@@ -4,7 +4,7 @@ import Ticket from "./pages/Ticket";
 import EmailConfirmation from "./pages/EmailConfirmation";
 import Transferred from "./pages/Transferred";
 import FeePage from "./pages/FeePage";
-import BottomNavBar from "./components/BottomNavBar";
+//import BottomNavBar from "./components/BottomNavBar";
 
 import Tswift from "./assets/Tswift.jpg";
 // import bts from "./assets/bts.jpg";
@@ -55,7 +55,7 @@ const events = {
       sec: "506",
       row: "7",
       seat: "8",
-    },
+    }
     /*
       sec: "544",
       row: "20",
@@ -106,7 +106,7 @@ function App() {
         {/* add a Redirect component to redirect to the "Ticket" page */}
         <Redirect exact from="/" to="/ticket" />
       </Switch>
-      <BottomNavBar />
+      {/* <BottomNavBar /> */}
     </Router>
 
   );

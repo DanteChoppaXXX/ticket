@@ -79,15 +79,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 
-  siteDetails: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    zIndex: theme.zIndex.modal + 40,
-    background:
-      "#202731",
-  },
+  // siteDetails: {
+  //   position: "fixed",
+  //   top: 0,
+  //   left: 0,
+  //   width: "100%",
+  //   zIndex: theme.zIndex.modal + 40,
+  //   background:
+  //     "#202731",
+  // },
   siteRoute: {
     height: 30,
     display: "flex",
