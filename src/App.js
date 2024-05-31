@@ -75,7 +75,9 @@ function App() {
       <Switch>
         <Route
           path="/myevent"
-          render={(routeProps) => <MyEvent events={events} {...routeProps} />}
+          render={(routeProps) => (
+          <MyEvent events={events} {...routeProps} />
+        )}
         />
         <Route
           path="/ticket"

@@ -7,15 +7,18 @@ import {
   IconButton,
   Typography,
 } from "@material-ui/core";
-import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
+//import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
+import RefreshIcon from '@material-ui/icons/Refresh';
 import ImgCard from "../components/ImgCard";
+import {useHistory} from "react-router-dom";
+//import PropTypes from 'prop-types';
 
 // STYLES
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   appBar: {
-    backgroundColor: "#fff",
-    marginTop: "57px",
+    backgroundColor: "#202731",
+    marginTop: "0px",
     position: "fixed",
     top: 0,
     left: 0,
@@ -24,43 +27,49 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     flexGrow: 1,
-    color: "#000",
-    marginLeft: "-24px",
+    color: "#fff",
+    marginLeft: "26px",
   },
-  backButton: {
-    color: "#000",
+  refreshButton: {
+    color: "#fff",
   },
 }));
 
 const MyEvent = ({ events }) => {
   const classes = useStyles();
+  const history = useHistory();
+  
+  const handleRefresh = () => history.push("/myevent");
   return (
     <Layout>
       <AppBar position="static" className={classes.appBar}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.backButton}
-            aria-label="back"
-          >
-            <ArrowBackIosOutlinedIcon />
-          </IconButton>
 
-          <Typography variant="h5" className={classes.title}>
-            My Event
+          <Typography variant="h6" className={classes.title}>
+            My Events
           </Typography>
+        <div className={classes.grow} />
+        <IconButton
+          edge="end"
+          className={classes.refreshButton} // You can adjust the class name as needed
+          aria-label="refresh" // Adjust the aria-label if necessary
+          onClick={handleRefresh} // Add an onClick event handler for refreshing
+        >
+          <RefreshIcon /> {/* Replace the ArrowBackIosOutlinedIcon with RefreshIcon */}
+        </IconButton>
         </Toolbar>
       </AppBar>
 
-      <Box mt={18}>
-        {events.map((props, i) => (
-          <Box key={i} my={2}>
-            <ImgCard {...props} />
-          </Box>
-        ))}
+      <Box mt={4}>
+        <Box my={2}>
+          <ImgCard {...events} />
+        </Box>
       </Box>
+
+
     </Layout>
   );
 };
+
 
 export default MyEvent;
