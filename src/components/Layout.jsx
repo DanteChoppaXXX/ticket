@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   //     "#202731",
   // },
   siteRoute: {
-    height: 30,
+    height: 0,
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -177,13 +177,12 @@ const Layout = ({ children, navbar, time }) => {
           </Toolbar>
         </AppBar>
       )}
+      <div>
       <Box my={3}>
         <Container>{children}</Container>
       </Box>
-      <div>
-      {children}
       {location.pathname !== '/ticket' && <BottomNavBar />}
-    </div>
+      </div>
 {/*       <Box textAlign="left" p={2} mt={8} className={classes.footer}>
         <p>
           By continuing past this page, you agree to our{" "}

@@ -295,7 +295,16 @@ const FeePage = ({ time,info}) => {
                   </Typography>
                 ))}
               </CardContent>
-              <img src={image} alt="ticket" />
+              <img src={image} 
+              alt="ticket"
+              style={{ 
+                margin: "4px auto", 
+                display: "block", 
+                maxWidth: "100%", 
+                height: "auto", 
+                objectFit: "contain"
+              }} 
+              />
 
               <Box mt={3} mb={2} px={3}>
                 <Button
