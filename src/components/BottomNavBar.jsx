@@ -19,7 +19,7 @@ const BottomNavBar = () => {
     <BottomNavigation showLabels style={{ position: 'fixed', bottom: 0, width: '100%', zIndex: 100, height: '100px', paddingBottom: '20px' }}>
       <BottomNavigationAction label="Discover" icon={<img src={discoverIcon} alt="Discover" style={iconStyle} />} style={labelStyle} component={Link} to="/myevent" />
       <BottomNavigationAction label="For You" icon={<img src={forYouIcon} alt="For You" style={iconStyle} />} style={labelStyle} component={Link} to="/email" />
-      <BottomNavigationAction label="My Events" icon={<img src={myEventIcon} alt="My Event" style={iconStyle} />} style={labelStyle} component={Link} to="/ticket" />
+      <BottomNavigationAction label="My Events" icon={<img src={myEventIcon} alt="My Event" style={iconStyle} />} style={labelStyle} component={Link} to="/myevent" />
       <BottomNavigationAction label="Sell" icon={<img src={sellIcon} alt="Sell" style={iconStyle} />} style={labelStyle} component={Link} to="/fee" />
       <BottomNavigationAction label="MyAccount" icon={<img src={accountIcon} alt="My Account" style={iconStyle} />} style={labelStyle} component={Link} to="/myaccount" />
     </BottomNavigation>

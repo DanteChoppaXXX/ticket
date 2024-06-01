@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "../assets/image 1.png";
 import { AppBar, Icon, Box, Toolbar, /*Typography*/ } from "@material-ui/core";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import BottomNavBar from './BottomNavBar'; 
 
 import SearchIcon from "@material-ui/icons/Search";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -125,6 +126,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Layout = ({ children, navbar, time }) => {
   const classes = useStyles();
+  const location = useLocation();
 
   return (
     <div className={classes.root}>
@@ -178,6 +180,10 @@ const Layout = ({ children, navbar, time }) => {
       <Box my={3}>
         <Container>{children}</Container>
       </Box>
+      <div>
+      {children}
+      {location.pathname !== '/ticket' && <BottomNavBar />}
+    </div>
 {/*       <Box textAlign="left" p={2} mt={8} className={classes.footer}>
         <p>
           By continuing past this page, you agree to our{" "}

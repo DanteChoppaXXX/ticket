@@ -4,7 +4,7 @@ import Ticket from "./pages/Ticket";
 import EmailConfirmation from "./pages/EmailConfirmation";
 import Transferred from "./pages/Transferred";
 import FeePage from "./pages/FeePage";
-//import BottomNavBar from "./components/BottomNavBar";
+import Layout from './components/Layout';
 
 import Tswift from "./assets/Tswift.jpg";
 // import bts from "./assets/bts.jpg";
@@ -70,45 +70,47 @@ const events = {
 };
 
 function App() {
+
   return (
     <Router>
-      <Switch>
-        <Route
-          path="/myevent"
-          render={(routeProps) => (
-          <MyEvent events={events} {...routeProps} />
-        )}
-        />
-        <Route
-          path="/ticket"
-          render={(routeProps) => (
-            <Ticket info={events} {...routeProps} time={time} />
+      <Layout>
+        <Switch>
+          <Route
+            path="/myevent"
+            render={(routeProps) => (
+            <MyEvent events={events} {...routeProps} />
           )}
-        />
-        <Route
-          path="/email"
-          render={(routeProps) => (
-            <EmailConfirmation {...routeProps} info={events} time={time} />
-          )}
-        />
+          />
+          <Route
+            path="/ticket"
+            render={(routeProps) => (
+              <Ticket info={events} {...routeProps} time={time} />
+            )}
+          />
+          <Route
+            path="/email"
+            render={(routeProps) => (
+              <EmailConfirmation {...routeProps} info={events} time={time} />
+            )}
+          />
 
-        <Route
-          path="/transfer"
-          render={(routeProps) => (
-            <Transferred info={events} time={time} {...routeProps} />
-          )}
-        />
+          <Route
+            path="/transfer"
+            render={(routeProps) => (
+              <Transferred info={events} time={time} {...routeProps} />
+            )}
+          />
 
-        <Route
-          path="/fee"
-          render={(routeProps) => (
-            <FeePage {...routeProps} info={events} time={time} />
-          )}
-        />
-        {/* add a Redirect component to redirect to the "Ticket" page */}
-        <Redirect exact from="/" to="/ticket" />
-      </Switch>
-      {/* <BottomNavBar /> */}
+          <Route
+            path="/fee"
+            render={(routeProps) => (
+              <FeePage {...routeProps} info={events} time={time} />
+            )}
+          />
+          {/* add a Redirect component to redirect to the "Ticket" page */}
+          <Redirect exact from="/" to="/ticket" />
+        </Switch>
+      </Layout>
     </Router>
 
   );
