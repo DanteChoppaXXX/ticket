@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.js": "/ticket/static/js/main.a5137c40.chunk.js",
-    "main.js.map": "/ticket/static/js/main.a5137c40.chunk.js.map",
-    "runtime-main.js": "/ticket/static/js/runtime-main.c09509de.js",
-    "runtime-main.js.map": "/ticket/static/js/runtime-main.c09509de.js.map",
-    "static/css/2.c3cf36cc.chunk.css": "/ticket/static/css/2.c3cf36cc.chunk.css",
-    "static/js/2.ebbb908d.chunk.js": "/ticket/static/js/2.ebbb908d.chunk.js",
-    "static/js/2.ebbb908d.chunk.js.map": "/ticket/static/js/2.ebbb908d.chunk.js.map",
-    "index.html": "/ticket/index.html",
-    "static/css/2.c3cf36cc.chunk.css.map": "/ticket/static/css/2.c3cf36cc.chunk.css.map",
-    "static/js/2.ebbb908d.chunk.js.LICENSE.txt": "/ticket/static/js/2.ebbb908d.chunk.js.LICENSE.txt",
-    "static/media/Apple-wallet.ca4e8b92.png": "/ticket/static/media/Apple-wallet.ca4e8b92.png",
-    "static/media/Tswift.4b851be6.jpg": "/ticket/static/media/Tswift.4b851be6.jpg",
-    "static/media/battery.c3ba1e18.png": "/ticket/static/media/battery.c3ba1e18.png",
-    "static/media/iphonebatterysignale.b277ad7f.png": "/ticket/static/media/iphonebatterysignale.b277ad7f.png",
-    "static/media/slick-theme.css": "/ticket/static/media/slick.c94f7671.ttf",
-    "static/media/ticketnumber.196b81b8.jpeg": "/ticket/static/media/ticketnumber.196b81b8.jpeg"
+    "main.js": "/myevent/static/js/main.63bd5a76.chunk.js",
+    "main.js.map": "/myevent/static/js/main.63bd5a76.chunk.js.map",
+    "runtime-main.js": "/myevent/static/js/runtime-main.931bda61.js",
+    "runtime-main.js.map": "/myevent/static/js/runtime-main.931bda61.js.map",
+    "static/css/2.4c98fa27.chunk.css": "/myevent/static/css/2.4c98fa27.chunk.css",
+    "static/js/2.ebbb908d.chunk.js": "/myevent/static/js/2.ebbb908d.chunk.js",
+    "static/js/2.ebbb908d.chunk.js.map": "/myevent/static/js/2.ebbb908d.chunk.js.map",
+    "index.html": "/myevent/index.html",
+    "static/css/2.4c98fa27.chunk.css.map": "/myevent/static/css/2.4c98fa27.chunk.css.map",
+    "static/js/2.ebbb908d.chunk.js.LICENSE.txt": "/myevent/static/js/2.ebbb908d.chunk.js.LICENSE.txt",
+    "static/media/Apple-wallet.ca4e8b92.png": "/myevent/static/media/Apple-wallet.ca4e8b92.png",
+    "static/media/Tswift.4b851be6.jpg": "/myevent/static/media/Tswift.4b851be6.jpg",
+    "static/media/battery.c3ba1e18.png": "/myevent/static/media/battery.c3ba1e18.png",
+    "static/media/iphonebatterysignale.b277ad7f.png": "/myevent/static/media/iphonebatterysignale.b277ad7f.png",
+    "static/media/slick-theme.css": "/myevent/static/media/slick.c94f7671.ttf",
+    "static/media/ticketnumber.196b81b8.jpeg": "/myevent/static/media/ticketnumber.196b81b8.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c09509de.js",
-    "static/css/2.c3cf36cc.chunk.css",
+    "static/js/runtime-main.931bda61.js",
+    "static/css/2.4c98fa27.chunk.css",
     "static/js/2.ebbb908d.chunk.js",
-    "static/js/main.a5137c40.chunk.js"
+    "static/js/main.63bd5a76.chunk.js"
   ]
 }
