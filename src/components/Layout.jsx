@@ -181,7 +181,7 @@ const Layout = ({ children, navbar, time }) => {
       <Box my={3}>
         <Container>{children}</Container>
       </Box>
-      {location.pathname !== '/ticket' && <BottomNavBar />}
+      {!(location.pathname === '/ticket' || location.pathname === '/update-details') && <BottomNavBar />}
       </div>
 {/*       <Box textAlign="left" p={2} mt={8} className={classes.footer}>
         <p>

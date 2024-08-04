@@ -33,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
   refreshButton: {
     color: "#fff",
   },
+  container: {
+    
+}
 }));
 
 const MyEvent = ({ events }) => {
@@ -60,8 +63,8 @@ const MyEvent = ({ events }) => {
         </Toolbar>
       </AppBar>
 
-      <Box mt={4}>
-        <Box my={2}>
+      <Box mt={4} >
+        <Box my={2} className={classes.container}>
           <ImgCard {...events} />
         </Box>
       </Box>

@@ -73,11 +73,11 @@ const BottomNavBar = () => {
         to="/fee"
       />
       <BottomNavigationAction
-        label="My Account"
+        label="Account"
         icon={<img src={accountIcon} alt="My Account" className={classes.icon} />}
         className={getClassName('/myaccount')}
         component={Link}
-        to="/myaccount"
+        to="/update-details"
       />
     </BottomNavigation>
   );

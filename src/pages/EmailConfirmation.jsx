@@ -344,7 +344,7 @@ const EmailConfirmation = ({ info, time }) => {
                 </Typography>
                 <Typography variant="subtitle2" component="span">
                   <strong style={{ lineHeight: "10px" }}>
-                    26 Aug 2022, <br /> 11:34 PM
+                    26 Mar 2024, <br /> 11:34 PM
                   </strong>
                 </Typography>
               </div>

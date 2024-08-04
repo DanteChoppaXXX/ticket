@@ -226,7 +226,7 @@ const Ticket = ({ info, time }) => {
                   <Typography variant="body1" className={classes.name}>
                     {info.name}
                   </Typography>
-                  <Typography variant="subtitle2" className={classes.sub}>
+                  <Typography variant="subtitle3" className={classes.sub}>
                     {info.date}
                   </Typography>
                   </div>
@@ -240,7 +240,7 @@ const Ticket = ({ info, time }) => {
                   timeFormat="MM DD YYYY, h:mm a"
                   classes={classes} 
                 /> */}
-                <Typography variant="subtitle1" component="h3">Lower Bowl</Typography>
+                <Typography variant="subtitle1" component="h3">FLOOR A3</Typography>
                 {/* <img
                   src={AppleWallet}
                   alt={"app"}
@@ -266,9 +266,8 @@ const Ticket = ({ info, time }) => {
                     className={classes.link}
                     variant="body2"
                   >
-                   
                   View Barcode
-                     </Link>
+                  </Link>
                 <Link
                   component={RouterLink}
                   className={classes.link}
