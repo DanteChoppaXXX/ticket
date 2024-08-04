@@ -2,7 +2,7 @@
   "name": "ticket",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DanteChoppaXXX.github.io/ticket",
+  "homepage": "https://DanteChoppaXXX.github.io/myevent",
   "dependencies": {
     "@material-ui/core": "^4.12.0",
     "@material-ui/icons": "^4.11.2",
