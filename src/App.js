@@ -157,7 +157,7 @@ const App = () => {
             )}
           />
           {/* add a Redirect component to redirect to the "Ticket" page */}
-          <Redirect exact from="/" to="/myevent" />
+          <Redirect to="/myevent" />
         </Switch>
       </Layout>
     </Router>
