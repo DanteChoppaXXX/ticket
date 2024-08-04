@@ -78,7 +78,7 @@ const App = () => {
     name: "Taylor Swift | The Eras Tour",
     title: "Verified Resale Ticket",
     image: Tswift, // Update with correct image path
-    user: "daniskascott@gmail.com",
+    user: "example@gmail.com",
     success: true,
     userName: "Daniska",
     clientName: "Buyer-name(buyer-email@gmail.com)",
