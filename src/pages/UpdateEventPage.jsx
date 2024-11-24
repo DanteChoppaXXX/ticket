@@ -38,6 +38,18 @@ const initialEventDetails = {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+        // Handle nested fields for emailInfo
+        if (name.startsWith('emailInfo.')) {
+            const key = name.split('.')[1];
+            setEventDetails((prevDetails) => ({
+            ...prevDetails,
+            emailInfo: {
+            ...prevDetails.emailInfo,
+            [key]: value,
+        },
+        }));
+        }
+
         if (name.includes('seatMap')) {
         const [_, index, field] = name.split('-');
         const updatedSeatMap = eventDetails.seatMap.map((seat, i) => (
