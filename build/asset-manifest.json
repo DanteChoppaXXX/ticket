@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.1a2e7240.chunk.js",
-    "main.js.map": "/static/js/main.1a2e7240.chunk.js.map",
+    "main.js": "/static/js/main.8a486a5b.chunk.js",
+    "main.js.map": "/static/js/main.8a486a5b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a2a64713.js",
     "runtime-main.js.map": "/static/js/runtime-main.a2a64713.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
@@ -10,7 +10,6 @@
     "index.html": "/index.html",
     "static/css/2.65f8c46c.chunk.css.map": "/static/css/2.65f8c46c.chunk.css.map",
     "static/js/2.8a351c61.chunk.js.LICENSE.txt": "/static/js/2.8a351c61.chunk.js.LICENSE.txt",
-    "static/media/Apple-wallet.ca4e8b92.png": "/static/media/Apple-wallet.ca4e8b92.png",
     "static/media/Tswift.4b851be6.jpg": "/static/media/Tswift.4b851be6.jpg",
     "static/media/battery.c3ba1e18.png": "/static/media/battery.c3ba1e18.png",
     "static/media/iphonebatterysignale.b277ad7f.png": "/static/media/iphonebatterysignale.b277ad7f.png",
@@ -21,6 +20,6 @@
     "static/js/runtime-main.a2a64713.js",
     "static/css/2.65f8c46c.chunk.css",
     "static/js/2.8a351c61.chunk.js",
-    "static/js/main.1a2e7240.chunk.js"
+    "static/js/main.8a486a5b.chunk.js"
   ]
 }
