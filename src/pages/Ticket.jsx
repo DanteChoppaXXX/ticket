@@ -240,7 +240,7 @@ const Ticket = ({ info, time }) => {
                   timeFormat="MM DD YYYY, h:mm a"
                   classes={classes} 
                 /> */}
-                <Typography variant="subtitle1" component="h3">FLOOR A3</Typography>
+                <Typography variant="subtitle1" component="h3">LOWER LEVEL</Typography>
                 {/* <img
                   src={AppleWallet}
                   alt={"app"}
