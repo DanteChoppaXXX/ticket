@@ -36,8 +36,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     flexGrow: 1,
-    color: "#FFF",
-    marginLeft: "0px",
+    color: "#fff",
+    marginLeft: "5px",
+    fontSize: "1.1rem",
+    fontWeight: 410,
+    marginTop: "10px",
   },
   closeButton: {
     color: "#FFF",
@@ -153,6 +156,7 @@ const Ticket = ({ info, time }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    infinite: false,
   };
 
   const [open, setOpen] = useState(false);

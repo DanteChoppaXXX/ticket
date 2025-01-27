@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     color: "#fff",
     marginLeft: "26px",
+    fontSize: "1.1rem",
+    fontWeight: 405,
+    marginTop: "10px",
   },
   refreshButton: {
     color: "#fff",

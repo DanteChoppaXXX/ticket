@@ -6,7 +6,11 @@ import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
-    position: "relative",
+    position: "absolute",
+    width: "95%",
+    left: "11px",
+    top: "75px",
+    borderRadius: "0",
   },
   bgImg: {
     height: 0,
@@ -33,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "8px",
   },
   name: {
-    fontWeight: 600,
+    fontWeight: 450,
   },
   sub: {
     fontSize: "0.75rem",
@@ -51,10 +55,10 @@ const ImgCard = ({ date, image, name, tix }) => {
       <CardMedia image={image} className={classes.bgImg} />
       <div className={classes.overlay}></div>
       <div className={classes.content}>
-        <Typography variant="body1" className={classes.name}>
+        <Typography variant="h6" className={classes.name}>
           {name}
         </Typography>
-        <Typography variant="subtitle2" className={classes.sub}>
+        <Typography variant="subtitle1"  component="h4" className={classes.seating}>
           {date}
         </Typography>
         <Typography variant="subtitle2" className={classes.sub} component="p">
