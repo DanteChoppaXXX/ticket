@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     width: "95%",
     left: "11px",
-    top: "75px",
+    top: "70px",
     borderRadius: "0",
   },
   bgImg: {

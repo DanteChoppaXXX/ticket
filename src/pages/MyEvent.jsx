@@ -28,9 +28,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     flexGrow: 1,
     color: "#fff",
-    marginLeft: "26px",
+    marginLeft: "0px",
     fontSize: "1.1rem",
-    fontWeight: 405,
+    fontWeight: 400,
     marginTop: "10px",
   },
   refreshButton: {
@@ -55,14 +55,6 @@ const MyEvent = ({ events }) => {
             My Events
           </Typography>
         <div className={classes.grow} />
-        <IconButton
-          edge="end"
-          className={classes.refreshButton} // You can adjust the class name as needed
-          aria-label="refresh" // Adjust the aria-label if necessary
-          onClick={handleRefresh} // Add an onClick event handler for refreshing
-        >
-          <RefreshIcon /> {/* Replace the ArrowBackIosOutlinedIcon with RefreshIcon */}
-        </IconButton>
         </Toolbar>
       </AppBar>
 

@@ -37,9 +37,9 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     flexGrow: 1,
     color: "#fff",
-    marginLeft: "5px",
-    fontSize: "1.1rem",
-    fontWeight: 410,
+    marginLeft: "0px",
+    fontSize: "1.0rem",
+    fontWeight: 400,
     marginTop: "10px",
   },
   closeButton: {
