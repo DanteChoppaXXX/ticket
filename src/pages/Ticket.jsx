@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     position: "absolute",
-    bottom: "10px",
+    bottom: "5px",
     left: "0",
     textAlign: "center",
     color: "#fcfcfc",
@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     display: "fixed",
-    marginTop: "30px",
+    marginTop: "0px",
     alignContent: "center",
     justifyContent: "space-around",
     marginBottom: "16px",
@@ -114,6 +114,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     fontWeight: 550,
     marginTop: "16px",
+    marginLeft: "70px",
     color: "#0078FF",
   },
   link1: {
@@ -265,13 +266,13 @@ const Ticket = ({ info, time }) => {
                 <div
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
-                  <Link
+                  {/* <Link
                     component="button"
                     className={classes.link}
                     variant="body2"
                   >
                   View Barcode
-                  </Link>
+                  </Link> */}
                 <Link
                   component={RouterLink}
                   className={classes.link}
