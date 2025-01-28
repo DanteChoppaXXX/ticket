@@ -8,6 +8,7 @@ import {
   Typography,
   Card,
   CardMedia,
+  Grid,
   Link,
   Button,
 } from "@material-ui/core";
@@ -46,7 +47,15 @@ const useStyles = makeStyles((theme) => ({
     color: "#FFF",
   },
   card: {
-    borderRadius: "16px",
+    borderRadius: "12px",
+    // Reduce the size of the card.
+    width: "95%",
+    margin: "0px auto",
+    padding: "0px",
+    boxShadow: "0px 1px 5px 0px",
+
+
+    
   },
   ticketType: {
     backgroundColor: "#0560C9",
@@ -195,10 +204,11 @@ const Ticket = ({ info, time }) => {
 
         </Toolbar>
       </AppBar>
-
       <Box mt={22} className={classes.container}>
         <Slider {...settings}>
           {seatMap.map((s) => (
+          <Grid container spacing={1}>
+            <Grid item>
             <Card key={s.sec} className={classes.card}>
               <Box className={classes.ticketType}>
                 <Typography variant="subtitle4">{title}</Typography>
@@ -287,6 +297,8 @@ const Ticket = ({ info, time }) => {
                 <img src={ver} alt="ver" />
               </div>
             </Card>
+        </Grid>
+      </Grid>
           ))}
         </Slider>
 
