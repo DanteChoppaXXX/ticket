@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.js": "/static/js/main.fa07f06f.chunk.js",
-    "main.js.map": "/static/js/main.fa07f06f.chunk.js.map",
+    "main.js": "/static/js/main.6777af20.chunk.js",
+    "main.js.map": "/static/js/main.6777af20.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a2a64713.js",
     "runtime-main.js.map": "/static/js/runtime-main.a2a64713.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
-    "static/js/2.8a351c61.chunk.js": "/static/js/2.8a351c61.chunk.js",
-    "static/js/2.8a351c61.chunk.js.map": "/static/js/2.8a351c61.chunk.js.map",
+    "static/js/2.a8db62eb.chunk.js": "/static/js/2.a8db62eb.chunk.js",
+    "static/js/2.a8db62eb.chunk.js.map": "/static/js/2.a8db62eb.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.65f8c46c.chunk.css.map": "/static/css/2.65f8c46c.chunk.css.map",
-    "static/js/2.8a351c61.chunk.js.LICENSE.txt": "/static/js/2.8a351c61.chunk.js.LICENSE.txt",
+    "static/js/2.a8db62eb.chunk.js.LICENSE.txt": "/static/js/2.a8db62eb.chunk.js.LICENSE.txt",
+    "static/media/Apple-wallet.91ad90a5.png": "/static/media/Apple-wallet.91ad90a5.png",
     "static/media/Tswift.4b851be6.jpg": "/static/media/Tswift.4b851be6.jpg",
     "static/media/battery.c3ba1e18.png": "/static/media/battery.c3ba1e18.png",
     "static/media/iphonebatterysignale.b277ad7f.png": "/static/media/iphonebatterysignale.b277ad7f.png",
@@ -19,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.a2a64713.js",
     "static/css/2.65f8c46c.chunk.css",
-    "static/js/2.8a351c61.chunk.js",
-    "static/js/main.fa07f06f.chunk.js"
+    "static/js/2.a8db62eb.chunk.js",
+    "static/js/main.6777af20.chunk.js"
   ]
 }
