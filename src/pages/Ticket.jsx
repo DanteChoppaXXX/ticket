@@ -49,10 +49,10 @@ const useStyles = makeStyles((theme) => ({
   card: {
     borderRadius: "12px",
     // Reduce the size of the card.
-    width: "95%",
+    width: "100%",
     margin: "0px auto",
     padding: "0px",
-    boxShadow: "0px 1px 5px 0px",
+    boxShadow: "0px 1px 2px 0px",
 
 
     
@@ -64,8 +64,9 @@ const useStyles = makeStyles((theme) => ({
     padding: "10px 5px",
   },
   name: {
-    width: "70%",
-    margin: "0px auto 5px",
+    width: "100%",
+    margin: "0px auto 0px",
+    fontSize: "1.1rem",
   },
   section: {
     backgroundColor: "#026AE1",
@@ -73,13 +74,16 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignContent: "center",
     justifyContent: "space-around",
-    padding: "32px 0",
+    padding: "20px 0",
+    fontSize: "0.9rem",
+    fontWeight: 300,
   },
   seating: {
     textAlign: "center",
   },
   cardImage: {
     position: "relative",
+    padding: "10px 0",
   },
   bgImg: {
     height: 0,
@@ -113,7 +117,9 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "16px",
   },
   time: {
-    fontWeight: 600,
+    fontWeight: 400,
+    fontSize: "0.73rem",
+    marginBottom: "3px",
   },
   wrapTime: {
     border: "1px solid #d5d0d0",
@@ -122,8 +128,9 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     fontWeight: 550,
-    marginTop: "16px",
-    marginLeft: "70px",
+    marginTop: "40px",
+    marginBottom: "-20px",
+    marginLeft: "65px",
     color: "#0078FF",
   },
   link1: {
@@ -148,6 +155,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "12px 24px",
     textTransform: "capitalize",
     width: "45%",
+    
   },
   badbtn: {
     background: "#EFF0F2",
@@ -207,7 +215,7 @@ const Ticket = ({ info, time }) => {
       <Box mt={22} className={classes.container}>
         <Slider {...settings}>
           {seatMap.map((s) => (
-          <Grid container spacing={1}>
+          <Grid container spacing={2}>
             <Grid item>
             <Card key={s.sec} className={classes.card}>
               <Box className={classes.ticketType}>
@@ -215,20 +223,20 @@ const Ticket = ({ info, time }) => {
               </Box>
               <Box className={classes.section}>
                 <div className={classes.seating}>
-                  <Typography variant="subtitle6">SEC</Typography>
-                  <Typography variant="subtitle6" component="h2">
+                  <Typography variant="subtitle3">SEC</Typography>
+                  <Typography variant="subtitle6" component="h3">
                     {s.sec}
                   </Typography>
                 </div>
                 <div className={classes.seating}>
-                  <Typography variant="subtitle6">ROW</Typography>
-                  <Typography variant="subtitle6" component="h2">
+                  <Typography variant="subtitle3">ROW</Typography>
+                  <Typography variant="subtitle6" component="h3">
                     {s.row}
                   </Typography>
                 </div>
                 <div className={classes.seating}>
-                  <Typography variant="subtitle6">SEAT</Typography>
-                  <Typography variant="subtitle6" component="h2">
+                  <Typography variant="subtitle3">SEAT</Typography>
+                  <Typography variant="subtitle6" component="h3">
                     {s.seat}
                   </Typography>
                 </div>
@@ -241,7 +249,7 @@ const Ticket = ({ info, time }) => {
                   <Typography variant="body1" className={classes.name}>
                     {info.name}
                   </Typography>
-                  <Typography variant="subtitle3" className={classes.sub}>
+                  <Typography variant="subtitle2" className={classes.time}>
                     {info.date}
                   </Typography>
                   </div>
@@ -255,21 +263,26 @@ const Ticket = ({ info, time }) => {
                   timeFormat="MM DD YYYY, h:mm a"
                   classes={classes} 
                 /> */}
-                <Typography variant="subtitle1" component="h3">LOWER LEVEL</Typography>
-                {/* <img
-                  src={AppleWallet}
-                  alt={"app"}
-                  style={{ margin: "4px auto", display: "block" }}
-                /> */}
+                <Typography 
+                style={{ 
+                  marginTop: "-20px",
+                  marginBottom: "16px",
+                  marginLeft: "60px",
+                  display: "flex", 
+                  maxWidth: "100%", }} 
+                  variant="subtitle2" component="h3">LOWER LEVEL</Typography>
                 <img
                   src={AppleWallet}
                   alt="app"
                   style={{ 
-                    margin: "4px auto", 
-                    display: "block", 
-                    maxWidth: "100%", 
-                    height: "auto", 
-                    objectFit: "contain"
+                    borderRadius: "3px",
+                    marginBottom: "-16px",
+                    marginLeft: "-16px",
+                    marginTop: "10px", 
+                    display: "flex", 
+                    maxWidth: "115%", 
+                    
+                  
                   }}
                 />
 
@@ -286,7 +299,7 @@ const Ticket = ({ info, time }) => {
                 <Link
                   component={RouterLink}
                   className={classes.link}
-                  variant="body2"
+                  variant="subtitle3"
                   to="/ticketdetails"
                 >
                   Ticket Details
@@ -307,7 +320,7 @@ const Ticket = ({ info, time }) => {
             variant="contained"
             className={classes.goodbtn}
             color="inherit"
-            size="large"
+            size="medium"
             onClick={handleDrawerOpen}
           >
             Transfer
@@ -316,7 +329,7 @@ const Ticket = ({ info, time }) => {
             variant="contained"
             className={classes.badbtn}
             color="inherit"
-            size="large"
+            size="medium"
           >
             Sell
           </Button>

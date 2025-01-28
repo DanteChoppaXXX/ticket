@@ -16,7 +16,7 @@ import { Container } from "@material-ui/core";
 import applebar from "../assets/iphonebatterysignale.png";
 
 const useStyles = makeStyles((theme) => ({
-  root: { flexGrow: 1, overflow: "hidden", width: "100%" },
+  root: { flexGrow: 1, overflow: "hidden", width: "100%", },
   header: {
     flexGrow: 1,
     display: "flex",
