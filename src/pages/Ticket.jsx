@@ -130,7 +130,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 550,
     marginTop: "40px",
     marginBottom: "-20px",
-    marginLeft: "65px",
+    marginLeft: "80px",
     color: "#0078FF",
   },
   link1: {
@@ -267,7 +267,7 @@ const Ticket = ({ info, time }) => {
                 style={{ 
                   marginTop: "-20px",
                   marginBottom: "16px",
-                  marginLeft: "60px",
+                  marginLeft: "80px",
                   display: "flex", 
                   maxWidth: "100%", }} 
                   variant="subtitle2" component="h3">LOWER LEVEL</Typography>
@@ -277,7 +277,7 @@ const Ticket = ({ info, time }) => {
                   style={{ 
                     borderRadius: "3px",
                     marginBottom: "-16px",
-                    marginLeft: "-16px",
+                    marginLeft: "-20px",
                     marginTop: "10px", 
                     display: "flex", 
                     maxWidth: "115%", 

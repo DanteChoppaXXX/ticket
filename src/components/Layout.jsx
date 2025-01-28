@@ -177,22 +177,14 @@ const Layout = ({ children, navbar, time }) => {
           </Toolbar>
         </AppBar>
       )}
+      
+      {/* This Box Renders All Pages Of The App. */}
       <div>
       <Box my={3}>
         <Container>{children}</Container>
       </Box>
       {!(location.pathname === '/ticket' || location.pathname === '/update-details') && <BottomNavBar />}
       </div>
-{/*       <Box textAlign="left" p={2} mt={8} className={classes.footer}>
-        <p>
-          By continuing past this page, you agree to our{" "}
-          <span className={classes.footerLink}>Terms of Use</span>
-        </p>
-        <p>
-          <span className={classes.footerLink}>Privacy Policy</span> | 1999-2023
-          Ticketmaster. All rights reserved.
-        </p>
-      </Box> */}
     </div>
   );
 };
