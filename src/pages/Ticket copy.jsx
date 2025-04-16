@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardImage: {
     position: "relative",
-    padding: "0px 0",
+    padding: "10px 0",
   },
   bgImg: {
     height: 0,
@@ -229,22 +229,17 @@ const Ticket = ({ info, time }) => {
                   </Typography>
                 </div>
                 <div className={classes.seating}>
-                  <Typography
-                  style={{ 
-                    marginTop: "10px",
-                    display: "flex", 
-                    maxWidth: "100%", }} 
-                    variant="subtitle6" component="h3">General Admission</Typography>
-                  {/* <Typography variant="subtitle6" component="h3">
+                  <Typography variant="subtitle3">ROW</Typography>
+                  <Typography variant="subtitle6" component="h3">
                     {s.row}
-                  </Typography> */}
+                  </Typography>
                 </div>
-                {/* <div className={classes.seating}>
+                <div className={classes.seating}>
                   <Typography variant="subtitle3">SEAT</Typography>
                   <Typography variant="subtitle6" component="h3">
                     {s.seat}
                   </Typography>
-                </div> */}
+                </div>
               </Box>
               <Box className={classes.cardImage}>
                 <CardMedia image={info.image} className={classes.bgImg} />
@@ -270,12 +265,12 @@ const Ticket = ({ info, time }) => {
                 /> */}
                 <Typography 
                 style={{ 
-                  marginTop: "-10px",
+                  marginTop: "-20px",
                   marginBottom: "16px",
-                  marginLeft: "60px",
+                  marginLeft: "80px",
                   display: "flex", 
                   maxWidth: "100%", }} 
-                  variant="subtitle2" component="h3">GENERAL ADMISSION</Typography>
+                  variant="subtitle2" component="h3">LOWER LEVEL</Typography>
                 <img
                   src={AppleWallet}
                   alt="app"

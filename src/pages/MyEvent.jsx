@@ -4,13 +4,13 @@ import {
   AppBar,
   Box,
   Toolbar,
-  IconButton,
+  //IconButton,
   Typography,
 } from "@material-ui/core";
 //import ArrowBackIosOutlinedIcon from "@material-ui/icons/ArrowBackIosOutlined";
-import RefreshIcon from '@material-ui/icons/Refresh';
+//import RefreshIcon from '@material-ui/icons/Refresh';
 import ImgCard from "../components/ImgCard";
-import {useHistory} from "react-router-dom";
+//import {useHistory} from "react-router-dom";
 //import PropTypes from 'prop-types';
 
 // STYLES
@@ -43,9 +43,9 @@ const useStyles = makeStyles((theme) => ({
 
 const MyEvent = ({ events }) => {
   const classes = useStyles();
-  const history = useHistory();
+  //const history = useHistory();
   
-  const handleRefresh = () => history.push("/myevent");
+  // const handleRefresh = () => history.push("/myevent");
   return (
     <Layout>
       <AppBar position="static" className={classes.appBar}>
